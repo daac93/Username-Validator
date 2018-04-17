@@ -1,0 +1,39 @@
+{
+	"info": {
+		"_postman_id": "d947d76d-e018-4d32-a6c0-a5709fff2cbe",
+		"name": "Username Validator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Validate Username",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"chiles\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/username/validate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"username",
+						"validate"
+					]
+				},
+				"description": "Send the username to validate in:\n\n{\n\t\"username\": \"[USERNAME]\"\n}"
+			},
+			"response": []
+		}
+	]
+}
